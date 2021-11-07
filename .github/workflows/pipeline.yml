@@ -12,6 +12,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build, Push and Deploy to Heroku
+      - name: test
+        run: ls
         id: heroku
         uses: jctaveras/heroku-deploy@v1.0.0
         with:
